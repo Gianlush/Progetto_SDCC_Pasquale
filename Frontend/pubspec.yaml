@@ -1,0 +1,50 @@
+name: frontend_sdcc_flutter
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.7.0 <3.8.0'
+
+dependencies:
+  google_fonts: 4.0.3
+  hash_password: ^0.0.3
+  crypto: ^3.0.2
+  flutter_rating_bar: ^4.0.1
+  dotted_border: ^2.0.0+3
+  file_picker: ^5.2.11
+  easy_image_viewer: ^1.2.0
+  file_saver: ^0.2.1
+  highlight_text: ^1.6.0
+  stroke_text: any
+
+  flutter:
+    sdk: flutter
+  http: any
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/filetype/
+
+
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+
