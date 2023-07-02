@@ -1,11 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 
-import 'package:file_picker/file_picker.dart';
 import 'package:http/http.dart';
 
-import '../object/Review.dart';
 
 
 enum TypeHeader {

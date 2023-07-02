@@ -7,7 +7,7 @@ import 'package:frontend_sdcc_flutter/widget/Logo.dart';
 
 import '../object/User.dart';
 import '../utility/Model.dart';
-import '../widget/Popup.dart';
+import '../widget/showPopup.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key key}) : super(key: key);
@@ -68,7 +68,7 @@ class LoginPageState extends State<LoginPage>{
                       width: MediaQuery.of(context).size.width * 0.70,
                       padding: const EdgeInsets.fromLTRB(0, 25, 0, 25),
                       decoration: BoxDecoration(
-                        color: Colors.white70,
+                        color: Colors.white.withOpacity(0.9),
                         borderRadius: BorderRadius.circular(30),
                         border: Border.all(width: 2),
                       ),
@@ -475,7 +475,8 @@ class LoginPageState extends State<LoginPage>{
         name: nameController.text,
         email: emailAddressController.text,
         surname: surnameController.text,
-        password: sha256.convert(utf8.encode(passwordController.text)).toString()
+        password: sha256.convert(utf8.encode(passwordController.text)).toString(),
+        admin: false,
     );
     Model.sharedInstance.signup(user).then((value) {
       if(value == null) {

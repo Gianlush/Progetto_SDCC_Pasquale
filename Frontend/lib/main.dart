@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_sdcc_flutter/pages/HomePage.dart';
 import 'package:frontend_sdcc_flutter/pages/LoginPage.dart';
 
 void main() {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         scrollbarTheme: const ScrollbarThemeData().copyWith(
       thumbColor: MaterialStateProperty.all(Colors.black45))),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }

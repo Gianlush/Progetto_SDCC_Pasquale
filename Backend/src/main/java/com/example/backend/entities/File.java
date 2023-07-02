@@ -1,5 +1,6 @@
 package com.example.backend.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,6 +33,7 @@ public class File {
     private String descrizione;
 
     @Basic
-    @Column(name = "data")
-    private byte[] data;
+    @JsonIgnore
+    @Column(name = "bytes")
+    private byte[] bytes;
 }

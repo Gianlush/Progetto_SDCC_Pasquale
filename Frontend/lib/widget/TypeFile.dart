@@ -14,7 +14,7 @@ class TypeFile extends StatelessWidget{
         children: [
           Text(type),
           const SizedBox(width: 10),
-          Image.asset("icons/filetype/"+type+".png", height:32)
+          Image(image: AssetImage("assets/icons/filetype/"+type.replaceAll(" ", "_")+".png"), height:32)
         ]
     );
   }

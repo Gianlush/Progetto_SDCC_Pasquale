@@ -4,6 +4,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
 import javax.persistence.*;
 
 @Getter
@@ -35,6 +36,6 @@ public class User {
     private String password;
 
     @Basic
-    @Column(name = "isAdmin")
-    private boolean isAdmin;
+    @Column(name = "admin")
+    private boolean admin;
 }
