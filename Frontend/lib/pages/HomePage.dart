@@ -169,7 +169,7 @@ class _HomePageState extends State<HomePage> {
                                   Padding(
                                       padding: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                                       child: RawMaterialButton(
-                                          onPressed: () => search(),
+                                          onPressed: () => {pageNumber=0,search()},
                                           padding: const EdgeInsets.fromLTRB(30,10,30,10),
                                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
                                           fillColor: Colors.indigo,
